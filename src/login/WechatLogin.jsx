@@ -86,7 +86,7 @@ class WechatLogin extends React.Component {
         }
       }
 
-      if (process && process.env.NODE_ENV === 'cloud') lanip = null // force to connect cloud
+      lanip = null // force to connect cloud
 
       const token = this.state.wxData.token
       const guid = this.state.wxData.user.id
@@ -113,7 +113,7 @@ class WechatLogin extends React.Component {
             ctx: user,
             data: { token, stationID }
           },
-          mdev: { address: 'http://www.siyouqun.com:80', domain: 'remote', lanip: ips[0], stationID, stationName, isCloud: true },
+          mdev: { address: 'http://test.siyouqun.com:4000', domain: 'remote', lanip: ips[0], stationID, stationName, isCloud: true }
           info: {
             isFulfilled: () => true,
             data: { id: stationID, name: stationName, connectState: 'CONNECTED' }

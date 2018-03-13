@@ -2,7 +2,7 @@ const mqtt = require('mqtt')
 const { ipcMain } = require('electron')
 const { getMainWindow } = require('./window')
 
-const server = 'mqtt://mqtt.siyouqun.com:1883'
+const server = 'mqtt://test.siyouqun.com:1883'
 
 class MQTT {
   constructor (clientId, topic, onMessage) {

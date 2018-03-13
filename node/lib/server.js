@@ -11,7 +11,7 @@ const store = require('./store')
 const getTmpPath = () => store.getState().config.tmpPath
 const getTmpTransPath = () => store.getState().config.tmpTransPath
 
-const cloudAddress = 'http://www.siyouqun.com:80'
+const cloudAddress = 'http://test.siyouqun.com:4000'
 
 const clearTmpTrans = () => {
   rimraf(`${getTmpTransPath()}/*`, e => e && console.error('clearTmpTrans error', e))

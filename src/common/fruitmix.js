@@ -3,7 +3,7 @@ import EventEmitter from 'eventemitter3'
 
 import Request from './Request'
 
-const cloudAddress = 'http://www.siyouqun.com:80'
+const cloudAddress = 'http://test.siyouqun.com:4000'
 
 /* this module encapsulate most fruitmix apis */
 class Fruitmix extends EventEmitter {
