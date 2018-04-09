@@ -117,7 +117,7 @@ class NavDrawer extends React.Component {
 
     /* station name */
     // console.log('viewsselectedDevice', views.account.ctx.props.selectedDevice)
-    let station = null
+    let station = i18n.__('Wisnuc Box')
     const info = views.account.ctx.props.selectedDevice.info
     if (info && info.data && info.data.name) {
       station = info.data.name
